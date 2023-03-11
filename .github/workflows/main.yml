@@ -16,6 +16,6 @@ jobs:
       - name: Vscode release plugin
         run: npm install -g vsce
       - name: set vsce
-        run: vsce login && ${{ secrets.PUBLISHER_TOKEN }}
+        run: vsce login MRSlouu && ${{ secrets.PUBLISHER_TOKEN }}
       - name: package and publish
         run: vsce package && vsce publish
