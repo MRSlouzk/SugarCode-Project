@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: npm install
-        run: cd SugarCode-VScodePlugin && npm install
+        run:  npm install
       - name: Vscode release plugin
         uses: JCofman/vscodeaction@master
         env:
