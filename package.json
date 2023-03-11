@@ -1,0 +1,48 @@
+{
+  "name": "sugarcode",
+  "displayName": "SugarCode",
+  "description": "SugarCode language extension by montmorillonite",
+  "version": "0.0.1",
+  "repository": "https://github.com/Monody-S/SugarCode-Project",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Formatters",
+    "Other"
+  ],
+  "publisher": "MRSlouu",
+  "main": "./SugarCode-VScodePlugin/src/extension.js",
+  "activationEvents": [],
+  "icon": "https://raw.githubusercontent.com/Monody-S/SugarCode-Project/main/SugarCode-VScodePlugin/icon.png",
+  "contributes": {  
+    "languages": [
+      {
+        "id": "SugarCode",
+        "extensions": [
+          ".sgc"
+        ],
+        "configuration": "./SugarCode-VScodePlugin/language-configuration.json",
+        "icon": {
+          "light": "./SugarCode-VScodePlugin/icon.png",
+          "dark": "./SugarCode-VScodePlugin/icon.png"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "SugarCode",
+        "scopeName": "text.SugarCode",
+        "path": "./SugarCode-VScodePlugin/syntaxes/SugarCode.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "SugarCode",
+        "path": "./SugarCode-VScodePlugin/snippets/SugarCode.code-snippets"
+      }
+    ]
+  }
+}
