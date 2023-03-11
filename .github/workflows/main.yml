@@ -14,8 +14,8 @@ jobs:
       - name: npm install
         run:  npm install
       - name: Vscode release plugin
-        uses: JCofman/vscodeaction@master
-        env:
-          PUBLISHER_TOKEN: ${{ secrets.PUBLISHER_TOKEN }}
-        with:
-          args: publish -p $PUBLISHER_TOKEN    
+        run: npm install -g vsce
+      - name: set vsce
+        run: vsce create-publisher MRSlouu && ${{ secrets.PUBLISHER_TOKEN }}
+      - name: package and publish
+        run: vsce package && vsce publish
