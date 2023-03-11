@@ -2,7 +2,8 @@
   "name": "sugarcode",
   "displayName": "SugarCode",
   "description": "SugarCode language extension by montmorillonite",
-  "version": "23.02.13",
+  "version": "0.0.1",
+  "repository": "https://github.com/Monody-S/SugarCode-Project",
   "engines": {
     "vscode": "^1.75.0"
   },
